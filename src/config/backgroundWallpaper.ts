@@ -2,7 +2,7 @@ import type { BackgroundWallpaperConfig } from "@/types/backgroundWallpaper";
 
 export const backgroundWallpaper: BackgroundWallpaperConfig = {
 	// 壁纸模式："banner" 横幅壁纸，"fullscreen" 全屏壁纸，"overlay" 全屏透明，"none" 纯色背景无壁纸
-	mode: "banner",
+	mode: "none",
 	// 是否允许用户通过导航栏切换壁纸模式
 	// 且同时维护多种壁纸模式过于复杂（已经屎山代码），在切换时有时候可能会出现一些奇怪的过渡效果或者bug
 	// 推荐只选择自己喜欢的模式并关闭切换功能
@@ -23,7 +23,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 	 *
 	 * 如果只使用一张图片或者使用随机图API，推荐直接使用字符串格式：
 	 * desktop: "https://t.alcy.cc/pc",   // 随机图API
-	 * desktop: "assets/images/DesktopWallpaper/d1.avif", // 单张图片
+	 * desktop: "assets/images/DesktopWallpaper/des 1.avif", // 单张图片
 	 *
 	 * mobile: "https://t.alcy.cc/mp", // 随机图API
 	 * mobile: "assets/images/MobileWallpaper/m1.avif", // 单张图片
