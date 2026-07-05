@@ -6,12 +6,27 @@ backend:
 media_folder: public/images
 public_folder: /images
 
+publish_mode: simple
+
+site_url: https://blog.wuyiyan.cc.cd
+display_url: https://blog.wuyiyan.cc.cd
+
 collections:
   - name: posts
     label: 文章
+    label_singular: 文章
+
     folder: src/content/posts
+
     create: true
+    delete: true
+    extension: md
+    format: frontmatter
+
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+
+    editor:
+      preview: false
 
     fields:
       - label: 标题
@@ -21,6 +36,7 @@ collections:
       - label: 发布时间
         name: published
         widget: datetime
+        format: "YYYY-MM-DD"
 
       - label: 描述
         name: description

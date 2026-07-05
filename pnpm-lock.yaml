@@ -92,9 +92,9 @@ importers:
       dayjs:
         specifier: ^1.11.21
         version: 1.11.21
-      decap-cms:
+      decap-cms-app:
         specifier: ^3.14.1
-        version: 3.14.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.17))(@types/node@25.9.1)(@types/react@19.2.17)(decap-cms-lib-util@3.7.1(immutable@3.8.3)(lodash@4.18.1))(graphql@15.10.2)(immer@10.2.0)(scheduler@0.27.0)(use-sync-external-store@1.4.0(react@19.2.7))
+        version: 3.14.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.17))(@types/node@25.9.1)(@types/react@19.2.17)(graphql@15.10.2)(immer@10.2.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(scheduler@0.27.0)(use-sync-external-store@1.4.0(react@19.2.7))
       expressive-code-collapsible:
         specifier: ^0.1.0
         version: 0.1.0(@expressive-code/core@0.43.1)
@@ -2531,9 +2531,6 @@ packages:
   '@ungap/structured-clone@1.3.1':
     resolution: {integrity: sha512-mUFwbeTqrVgDQxFveS+df2yfap6iuP20NAKAsBt5jDEoOTDew+zwLAOilHCeQJOVSvmgCX4ogqIrA0mnyr08yQ==}
 
-  '@uploadcare/cname-prefix@6.18.4':
-    resolution: {integrity: sha512-dEDkoMneA01UoJNpS7KcxxCkuP87fdWfK111Q/3nt5WO1gb6VpvZuUse9ac+A/h9iVEkaPxsO7cNsEtLxGKOpQ==}
-
   '@vercel/stega@0.1.2':
     resolution: {integrity: sha512-P7mafQXjkrsoyTRppnt0N21udKS9wUmLXHRyP9saLXLHw32j/FgUJ3FscSWgvSqRs4cj7wKZtwqJEvWJ2jbGmA==}
 
@@ -3048,9 +3045,6 @@ packages:
     resolution: {integrity: sha512-AdmX6xUzdNASswsFtmwSt7Vj8po9IuqXm0UXz7QKPuEUmPB4XyjGfaAr2PSuELMwkRMVH1EpIkX5bTZGRB3eCA==}
     engines: {node: '>=10'}
 
-  create-react-class@15.7.0:
-    resolution: {integrity: sha512-QZv4sFWG9S5RUvkTYWbflxeZX+JG7Cz0Tn33rQBJ+WFQTqTfUTjMjiv9tnfXazjsO5r0KhPs+AqCjyrQX6h2ng==}
-
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
@@ -3339,14 +3333,6 @@ packages:
   decap-cms-locales@3.7.0:
     resolution: {integrity: sha512-l7sTCbWVWrOISBP5UrDMf6sEnEpTPKh9AA4Vf3cH39Wm3paMS9knqOvpGpHLHZkgnBg6OF2xGe3bdIb1wkyWvA==}
 
-  decap-cms-media-library-cloudinary@3.1.0:
-    resolution: {integrity: sha512-dPBxCTi2PhSpuOMqa1fHmQzQXb/yEg0Djn80v15fnqjaLkCh/ByueB8V0l+WmyzViZXeStiQqhuIOhIttfsGiQ==}
-    peerDependencies:
-      decap-cms-lib-util: ^3.0.0
-
-  decap-cms-media-library-uploadcare@3.1.0:
-    resolution: {integrity: sha512-4jW4dgQOYVmD4IovpP6NaYoaj6LAj5xV36mevMjDcaB5ZMg002nS/Ee6szBvvAcQbXDZotC1ZL7An38/RgK+aw==}
-
   decap-cms-ui-auth@3.3.0:
     resolution: {integrity: sha512-fepJ1wMxbYAD8awyAN1n4yWbeb5oWe5nd2DOAyt9zQI5m89p3Wsp4oXVwD2pLGFceU8F9PycHJ62AQ827sFqtw==}
     peerDependencies:
@@ -3531,9 +3517,6 @@ packages:
       decap-cms-ui-default: ^3.0.0
       prop-types: ^15.7.2
       react: ^19.1.0
-
-  decap-cms@3.14.1:
-    resolution: {integrity: sha512-zYa5VkcZQJA0vH6WyVpzWbRcVNWVNd90EDrpHN7NvRaFHifHFSeaFsK0KawpBrxNHppRRUq9VWjoQy4sARyudA==}
 
   decode-named-character-reference@1.2.0:
     resolution: {integrity: sha512-c6fcElNV6ShtZXmsgNgFFV5tVX2PaV4g+MOAkb8eXHvn6sryJBrZa9r0zV6+dtTyoCKxtDy5tyQ5ZwQuidtd+Q==}
@@ -4575,9 +4558,6 @@ packages:
         optional: true
       react:
         optional: true
-
-  jquery@3.7.1:
-    resolution: {integrity: sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==}
 
   js-base64@3.8.0:
     resolution: {integrity: sha512-65kvbemyZhj+ExQt1PEFyBEjL5vAHysu1lJdW1AwhhChkO8ZBPizYk/m9GVrpbS2Je1hF+UYZ+6KywqtZV8mHw==}
@@ -7023,14 +7003,6 @@ packages:
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
-
-  uploadcare-widget-tab-effects@1.7.2:
-    resolution: {integrity: sha512-56IxhR5TueGRv9ZUReAZTycV4iWBZ421L1KlMGpK7kCJs/vyQMDY+iQTr3WLtEUmq2Jl9v6H6EA471s3jjpGYQ==}
-    peerDependencies:
-      uploadcare-widget: 3.x
-
-  uploadcare-widget@3.24.0:
-    resolution: {integrity: sha512-v2Rs7ZwXCVyVmkG5+xN5Q0lQtEpXDTeq+nGO/OCxfi9b6XE5h3k7ZOhNegSB7Y8YCE4JnN8CqgKC15Fq3nxedA==}
 
   url-join@4.0.1:
     resolution: {integrity: sha512-jk1+QP6ZJqyOiuEI9AEWQfju/nB2Pw466kbA0LEZljHwKeMgd9WrAEgEGxjPDD2+TNbbb37rTyhEfrCXfuKXnA==}
@@ -10128,8 +10100,6 @@ snapshots:
 
   '@ungap/structured-clone@1.3.1': {}
 
-  '@uploadcare/cname-prefix@6.18.4': {}
-
   '@vercel/stega@0.1.2': {}
 
   '@volar/kit@2.4.28(typescript@5.9.3)':
@@ -10753,11 +10723,6 @@ snapshots:
       path-type: 4.0.0
       yaml: 1.10.3
 
-  create-react-class@15.7.0:
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-
   cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
@@ -11197,16 +11162,6 @@ snapshots:
 
   decap-cms-locales@3.7.0: {}
 
-  decap-cms-media-library-cloudinary@3.1.0(decap-cms-lib-util@3.7.1(immutable@3.8.3)(lodash@4.18.1)):
-    dependencies:
-      decap-cms-lib-util: 3.7.1(immutable@3.8.3)(lodash@4.18.1)
-
-  decap-cms-media-library-uploadcare@3.1.0:
-    dependencies:
-      immutable: 3.8.3
-      uploadcare-widget: 3.24.0
-      uploadcare-widget-tab-effects: 1.7.2(uploadcare-widget@3.24.0)
-
   decap-cms-ui-auth@3.3.0(@emotion/react@11.14.0(@types/react@19.2.17)(react@19.2.7))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.17)(react@19.2.7))(@types/react@19.2.17)(react@19.2.7))(decap-cms-lib-auth@3.2.1(immutable@3.8.3)(lodash@4.18.1))(decap-cms-ui-default@3.8.0(@emotion/react@11.14.0(@types/react@19.2.17)(react@19.2.7))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.17)(react@19.2.7))(@types/react@19.2.17)(react@19.2.7))(immutable@3.8.3)(lodash@4.18.1)(prop-types@15.8.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(lodash@4.18.1)(prop-types@15.8.1)(react@19.2.7):
     dependencies:
       '@emotion/react': 11.14.0(@types/react@19.2.17)(react@19.2.7)
@@ -11470,27 +11425,6 @@ snapshots:
       react-textarea-autosize: 8.5.9(@types/react@19.2.17)(react@19.2.7)
     transitivePeerDependencies:
       - '@types/react'
-
-  decap-cms@3.14.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.17))(@types/node@25.9.1)(@types/react@19.2.17)(decap-cms-lib-util@3.7.1(immutable@3.8.3)(lodash@4.18.1))(graphql@15.10.2)(immer@10.2.0)(scheduler@0.27.0)(use-sync-external-store@1.4.0(react@19.2.7)):
-    dependencies:
-      codemirror: 5.65.21
-      create-react-class: 15.7.0
-      decap-cms-app: 3.14.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.17))(@types/node@25.9.1)(@types/react@19.2.17)(graphql@15.10.2)(immer@10.2.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(scheduler@0.27.0)(use-sync-external-store@1.4.0(react@19.2.7))
-      decap-cms-media-library-cloudinary: 3.1.0(decap-cms-lib-util@3.7.1(immutable@3.8.3)(lodash@4.18.1))
-      decap-cms-media-library-uploadcare: 3.1.0
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-    transitivePeerDependencies:
-      - '@types/hoist-non-react-statics'
-      - '@types/node'
-      - '@types/react'
-      - decap-cms-lib-util
-      - graphql
-      - immer
-      - react-native
-      - scheduler
-      - supports-color
-      - use-sync-external-store
 
   decode-named-character-reference@1.2.0:
     dependencies:
@@ -12754,8 +12688,6 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.17
       react: 19.2.7
-
-  jquery@3.7.1: {}
 
   js-base64@3.8.0: {}
 
@@ -15994,16 +15926,6 @@ snapshots:
       browserslist: 4.28.1
       escalade: 3.2.0
       picocolors: 1.1.1
-
-  uploadcare-widget-tab-effects@1.7.2(uploadcare-widget@3.24.0):
-    dependencies:
-      uploadcare-widget: 3.24.0
-
-  uploadcare-widget@3.24.0:
-    dependencies:
-      '@uploadcare/cname-prefix': 6.18.4
-      escape-html: 1.0.3
-      jquery: 3.7.1
 
   url-join@4.0.1: {}
 
