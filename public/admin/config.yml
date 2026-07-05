@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: 你的GitHub用户名/Firefly
+  repo: usdasus/Firefly
   branch: main
 
 media_folder: "public/images/uploads"
