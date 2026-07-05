@@ -12,7 +12,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "Blog",
 
 	// 站点 URL
-	site_url: "https://firefly.cuteleaf.cn",
+	site_url: "http://blog.wuyiyan.cc.cd/",
 
 	// 站点描述
 	description:
