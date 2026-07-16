@@ -6,7 +6,7 @@ export const profileConfig: ProfileConfig = {
 	// 1. public 目录（以 "/" 开头，不优化）："/assets/images/avatar.webp"
 	// 2. src 目录（不以 "/" 开头，自动优化但会增加构建时间，推荐）："assets/images/avatar.webp"
 	// 3. 远程 URL："https://example.com/avatar.jpg"
-	avatar: "assets/images/avatar.avif",
+	avatar: "https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEXUGtqWJLp7GDalWrvfG6PGPs5zapr4gACXCcAAm1OwFbymgzerVRRnT0E.jpg",
 
 	// 名字
 	name: "Wuyiyan",
@@ -36,7 +36,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Email",
 			icon: "fa7-solid:envelope",
-			url: "mailto:xiaye@msn.com",
+			url: "mailto:kyuuitlpq@outlook.com",
 			showName: false,
 		},
 		{
