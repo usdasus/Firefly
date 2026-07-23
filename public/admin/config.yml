@@ -6,8 +6,8 @@ backend:
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
-site_url: "https://eloquent-mousse-ecf2a3.netlify.app"
-display_url: "https://eloquent-mousse-ecf2a3.netlify.app"
+site_url: https://eloquent-mousse-ecf2a3.netlify.app
+display_url: https://blog.wuyiyan.cc.cd
 
 locale: "zh_Hans"
 
