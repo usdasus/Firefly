@@ -2,9 +2,15 @@
 title: 近期玩的游戏
 published: 2026-07-05
 description: 游戏相关
-tags: [蝙蝠侠，游戏，刺客信条]
+tags:
+  - 蝙蝠侠，游戏，刺客信条
 category: 杂文
+author: Eau
+licenseName: CC BY
+licenseUrl: https://creativecommons.org/licenses/by/4.0/deed.zh-hans
 draft: false
+pinned: false
+comment: true
 ---
 
 最近也是尝试玩了玩《蝙蝠侠：阿卡姆疯人院》和《刺客信条：大革命》，这两款游戏其实我很早之前就玩过了，不过最近又拿它出来罢了，可能是中考后有点无聊吧，我什么都拿来试试了。其实最期待的还是在八月份能跟朋友一起玩《双人成行》，这款游戏我盯着五年了，也没能通关它，可以说是我的一个心结了，一想到很快就能解了我的结，似乎感到很多事情都无趣了。《蝙蝠侠》和《大革命》是我在最近还是比较感兴趣的游戏了，不过今天都在搞这个blog，没什么时间玩呢。
