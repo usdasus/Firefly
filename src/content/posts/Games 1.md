@@ -3,7 +3,9 @@ title: 近期玩的游戏
 published: 2026-07-05
 description: 游戏相关
 tags:
-  - 蝙蝠侠，游戏，刺客信条
+  - 蝙蝠侠
+  - 游戏
+  - 刺客信条
 category: 杂文
 author: Eau
 licenseName: CC BY

@@ -2,9 +2,11 @@
 title: 第一篇文章
 published: 2026-07-05
 description: 本站的第一篇文章
-tags: [Start，初始]
+tags: []
 category: 杂文
 draft: false
+pinned: false
+comment: true
 ---
 
 ## 本站的第一篇文章
