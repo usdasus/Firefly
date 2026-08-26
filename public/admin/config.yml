@@ -148,3 +148,35 @@ collections:
       - label: "正文"
         name: "body"
         widget: "markdown"
+
+  - name: "dynamic"
+    label: "动态"
+    label_singular: "动态"
+
+    folder: "src/content/dynamic"
+
+    create: true
+    delete: true
+
+    extension: "md"
+    format: "frontmatter"
+
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
+
+    summary: "{{published}}"
+
+    editor:
+      preview: true
+
+    fields:
+      - label: "发布时间"
+        name: "published"
+        widget: "datetime"
+        format: "YYYY-MM-DD HH:mm:ss"
+        date_format: "YYYY-MM-DD"
+        time_format: "HH:mm:ss"
+        picker_utc: false
+
+      - label: "正文"
+        name: "body"
+        widget: "markdown"     
