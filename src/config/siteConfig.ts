@@ -11,7 +11,7 @@ const pages = resolvePageToggles({
 	// ── 社交 (Social) ──────────────────────────────────
 
 	// 友链页面开关
-	friends: true,
+	friends: false,
 	// 留言板页面开关，需要配置评论系统
 	guestbook: true,
 
@@ -24,18 +24,18 @@ const pages = resolvePageToggles({
 	// 书签导航页面开关
 	booknav: true,
 	// 哔哩哔哩追番页面开关
-	bilibili: false,
+	bilibili: true,
 	// 番组计划页面开关
 	bangumi: false,
 	// VNDB页面开关
-	vndb: false,
+	vndb: true,
 	// MyAnimeList页面开关
 	mal: false,
 
 	// ── 关于 (About) ──────────────────────────────────
 
 	// 打赏页面开关
-	sponsor: true,
+	sponsor: false,
 });
 
 export const siteConfig: SiteConfig = {
@@ -54,8 +54,6 @@ export const siteConfig: SiteConfig = {
 
 	// 站点关键词
 	keywords: [
-		"Firefly",
-		"Fuwari",
 		"Astro",
 		"ACGN",
 		"博客",
@@ -110,8 +108,8 @@ export const siteConfig: SiteConfig = {
 		// 使用 Astro 图标库时不需要设置 valueDark，图标会自动跟随主题亮暗色切换
 		logo: {
 			type: "image",
-			value: "assets/images/logo/firefly-light.png",
-			valueDark: "assets/images/logo/firefly-dark.png",
+			value: "assets/images/logo/SOS.png",
+			valueDark: "assets/images/logo/SOS.png",
 			alt: "🍀",
 		},
 		// 导航栏标题
@@ -240,7 +238,7 @@ export const siteConfig: SiteConfig = {
 	// ── Bilibili配置 ──────────────────────────────────
 	bilibili: {
 		// 你的 Bilibili 用户 UID
-		uid: "38932988",
+		uid: "221016097",
 	},
 
 	// ── 番组计划bangumi配置 ──────────────────────────────────
@@ -270,7 +268,7 @@ export const siteConfig: SiteConfig = {
 	// ── VNDB配置 ──────────────────────────────────
 	vndb: {
 		// VNDB 用户 ID
-		userId: "u358128",
+		userId: "u359625",
 		// 数据模式：static=构建时获取，dynamic=客户端实时获取
 		// static 模式在构建时获取数据并静态渲染，部署后数据不更新
 		// dynamic 模式在浏览器中实时请求 API，始终显示最新数据

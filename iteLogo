@@ -1,0 +1,61 @@
+[35mscripts/generate-lqips.ts[m[36m:[m[32m13[m[36m:[m	"public/[1;31mfavicon[m/**",
+[35msrc/config/booknavConfig.ts[m[36m:[m[32m11[m[36m:[m	// [1;31mfavicon[m 自动获取配置
+[35msrc/config/booknavConfig.ts[m[36m:[m[32m12[m[36m:[m	[1;31mfavicon[m: {
+[35msrc/config/booknavConfig.ts[m[36m:[m[32m13[m[36m:[m		// 书签未填写 icon 时，是否自动获取目标站点的 [1;31mfavicon[m 图标
+[35msrc/config/booknavConfig.ts[m[36m:[m[32m16[m[36m:[m		// [1;31mfavicon[m 接口地址，{domain} 为占位符，会被替换成目标站点域名
+[35msrc/config/booknavConfig.ts[m[36m:[m[32m18[m[36m:[m		//   https://a.[1;31mfavicon[m.im/{domain}
+[35msrc/config/booknavConfig.ts[m[36m:[m[32m19[m[36m:[m		//   https://[1;31mfavicon[m.im/{domain}
+[35msrc/config/booknavConfig.ts[m[36m:[m[32m20[m[36m:[m		api: "https://a.[1;31mfavicon[m.im/{domain}",
+[35msrc/config/booknavConfig.ts[m[36m:[m[32m40[m[36m:[m				// 不填则会通过接口自动获取目标站点的 [1;31mfavicon[m 图标（需要在上面配置）
+[35msrc/config/booknavConfig.ts[m[36m:[m[32m81[m[36m:[m				icon: "/[1;31mfavicon[m/firefly-32.png",
+[35msrc/config/siteConfig.ts[m[36m:[m[32m86[m[36m:[m	// 如果启用了OpenGraph图片功能，数组中需要包含png格式的[1;31mfavicon[m图标
+[35msrc/config/siteConfig.ts[m[36m:[m[32m87[m[36m:[m	[1;31mfavicon[m: [
+[35msrc/config/siteConfig.ts[m[36m:[m[32m90[m[36m:[m			src: "/[1;31mfavicon[m/firefly-32.png",
+[35msrc/constants/icon.ts[m[36m:[m[32m5[m[36m:[m		src: "/[1;31mfavicon[m/[1;31mfavicon[m-light-32.png",
+[35msrc/constants/icon.ts[m[36m:[m[32m10[m[36m:[m		src: "/[1;31mfavicon[m/[1;31mfavicon[m-light-128.png",
+[35msrc/constants/icon.ts[m[36m:[m[32m15[m[36m:[m		src: "/[1;31mfavicon[m/[1;31mfavicon[m-light-180.png",
+[35msrc/constants/icon.ts[m[36m:[m[32m20[m[36m:[m		src: "/[1;31mfavicon[m/[1;31mfavicon[m-light-192.png",
+[35msrc/constants/icon.ts[m[36m:[m[32m25[m[36m:[m		src: "/[1;31mfavicon[m/[1;31mfavicon[m-dark-32.png",
+[35msrc/constants/icon.ts[m[36m:[m[32m30[m[36m:[m		src: "/[1;31mfavicon[m/[1;31mfavicon[m-dark-128.png",
+[35msrc/constants/icon.ts[m[36m:[m[32m35[m[36m:[m		src: "/[1;31mfavicon[m/[1;31mfavicon[m-dark-180.png",
+[35msrc/constants/icon.ts[m[36m:[m[32m40[m[36m:[m		src: "/[1;31mfavicon[m/[1;31mfavicon[m-dark-192.png",
+[35msrc/layouts/Layout.astro[m[36m:[m[32m106[m[36m:[mconst [1;31mfavicon[ms: Favicon[] =
+[35msrc/layouts/Layout.astro[m[36m:[m[32m107[m[36m:[m	siteConfig.[1;31mfavicon[m.length > 0 ? siteConfig.[1;31mfavicon[m : defaultFavicons;
+[35msrc/layouts/Layout.astro[m[36m:[m[32m221[m[36m:[m      [1;31mfavicon[ms.map(([1;31mfavicon[m) => (
+[35msrc/layouts/Layout.astro[m[36m:[m[32m224[m[36m:[m          href={[1;31mfavicon[m.src.startsWith("/") ? url([1;31mfavicon[m.src) : [1;31mfavicon[m.src}
+[35msrc/layouts/Layout.astro[m[36m:[m[32m225[m[36m:[m          sizes={[1;31mfavicon[m.sizes}
+[35msrc/layouts/Layout.astro[m[36m:[m[32m226[m[36m:[m          media={[1;31mfavicon[m.theme && `(prefers-color-scheme: ${[1;31mfavicon[m.theme})`}
+[35msrc/pages/booknav.astro[m[36m:[m[32m29[m[36m:[m		resolvedIcon: resolveBooknavIcon(item, booknavPageConfig.[1;31mfavicon[m),
+[35msrc/pages/og/[...slug].ts[m[36m:[m[32m128[m[36m:[m// Helper to load avatar/[1;31mfavicon[m with caching
+[35msrc/pages/og/[...slug].ts[m[36m:[m[32m186[m[36m:[m	let iconPath = "/[1;31mfavicon[m/[1;31mfavicon[m-dark-192.png";
+[35msrc/pages/og/[...slug].ts[m[36m:[m[32m187[m[36m:[m	if (siteConfig.[1;31mfavicon[m.length > 0) {
+[35msrc/pages/og/[...slug].ts[m[36m:[m[32m188[m[36m:[m		const pngFavicon = siteConfig.[1;31mfavicon[m.find((f) =>
+[35msrc/pages/og/[...slug].ts[m[36m:[m[32m191[m[36m:[m		iconPath = (pngFavicon ?? siteConfig.[1;31mfavicon[m[0]).src;
+[35msrc/types/booknavConfig.ts[m[36m:[m[32m8[m[36m:[m	// 图标，留空则自动获取目标站点的 [1;31mfavicon[m
+[35msrc/types/booknavConfig.ts[m[36m:[m[32m29[m[36m:[m// [1;31mfavicon[m 自动获取配置
+[35msrc/types/booknavConfig.ts[m[36m:[m[32m31[m[36m:[m	enabled: boolean; // 是否在未填写 icon 时自动获取 [1;31mfavicon[m
+[35msrc/types/booknavConfig.ts[m[36m:[m[32m32[m[36m:[m	// [1;31mfavicon[m 接口地址，{domain} 会被替换为目标站点域名
+[35msrc/types/booknavConfig.ts[m[36m:[m[32m40[m[36m:[m	[1;31mfavicon[m: BooknavFaviconConfig; // [1;31mfavicon[m 自动获取配置
+[35msrc/types/siteConfig.ts[m[36m:[m[32m60[m[36m:[m	[1;31mfavicon[m: Array<{
+[35msrc/utils/booknav-utils.ts[m[36m:[m[32m26[m[36m:[m// 用域名替换 [1;31mfavicon[m 接口地址中的 {domain} 占位符
+[35msrc/utils/booknav-utils.ts[m[36m:[m[32m37[m[36m:[m// 解析书签图标：手填优先，其次 [1;31mfavicon[m 自动获取，最后首字母兜底
+[35msrc/utils/booknav-utils.ts[m[36m:[m[32m40[m[36m:[m	[1;31mfavicon[m: BooknavFaviconConfig,
+[35msrc/utils/booknav-utils.ts[m[36m:[m[32m57[m[36m:[m	// 未填写图标时，尝试自动获取 [1;31mfavicon[m
+[35msrc/utils/booknav-utils.ts[m[36m:[m[32m58[m[36m:[m	if ([1;31mfavicon[m.enabled) {
+[35msrc/utils/booknav-utils.ts[m[36m:[m[32m59[m[36m:[m		const [1;31mfavicon[mUrl = buildFaviconUrl([1;31mfavicon[m.api, getBooknavDomain(item.url));
+[35msrc/utils/booknav-utils.ts[m[36m:[m[32m60[m[36m:[m		if ([1;31mfavicon[mUrl) {
+[35msrc/utils/booknav-utils.ts[m[36m:[m[32m61[m[36m:[m			return { kind: "image", value: [1;31mfavicon[mUrl };
+[35msrc/utils/schema-image.ts[m[36m:[m[32m98[m[36m:[m// 解析 [1;31mfavicon[m 的 sizes（如 "192x192"）为宽高
+[35msrc/utils/schema-image.ts[m[36m:[m[32m105[m[36m:[m// 用站点 [1;31mfavicon[m 作为 publisher logo 兜底（Google org logo 偏好 raster：png/jpg/gif）
+[35msrc/utils/schema-image.ts[m[36m:[m[32m111[m[36m:[m	const candidates = [...(siteConfig.[1;31mfavicon[m || []), ...defaultFavicons];
+[35msrc/utils/schema-image.ts[m[36m:[m[32m114[m[36m:[m	// 解析每个 [1;31mfavicon[m 的尺寸并挑最大的 raster（png/jpg/gif）作为 publisher logo
+[35msrc/utils/schema-image.ts[m[36m:[m[32m127[m[36m:[m	const [1;31mfavicon[m =
+[35msrc/utils/schema-image.ts[m[36m:[m[32m131[m[36m:[m	if (![1;31mfavicon[m) return null;
+[35msrc/utils/schema-image.ts[m[36m:[m[32m134[m[36m:[m	if (/^https?:|^\/\//.test([1;31mfavicon[m.src) || [1;31mfavicon[m.src.startsWith("data:")) {
+[35msrc/utils/schema-image.ts[m[36m:[m[32m135[m[36m:[m		logoUrl = [1;31mfavicon[m.src;
+[35msrc/utils/schema-image.ts[m[36m:[m[32m136[m[36m:[m	} else if ([1;31mfavicon[m.src.startsWith("/")) {
+[35msrc/utils/schema-image.ts[m[36m:[m[32m137[m[36m:[m		logoUrl = new URL(url([1;31mfavicon[m.src), siteConfig.site_url).toString();
+[35msrc/utils/schema-image.ts[m[36m:[m[32m139[m[36m:[m		logoUrl = await toAbsoluteImageUrl([1;31mfavicon[m.src, "", siteConfig.site_url);
+[35msrc/utils/schema-image.ts[m[36m:[m[32m143[m[36m:[m	const dims = parseSizes([1;31mfavicon[m.sizes);
+[35msrc/utils/schema-image.ts[m[36m:[m[32m162[m[36m:[m * 若 navbar 用图标库 icon（无图片 URL）或未配置，则回退到站点 [1;31mfavicon[m。
+[35msrc/utils/schema-image.ts[m[36m:[m[32m189[m[36m:[m		// icon 类型无图片 URL → 落到 [1;31mfavicon[m 兜底
